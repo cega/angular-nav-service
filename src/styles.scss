@@ -1,0 +1,15 @@
+/* Add application styles & imports to this file! */
+@use 'app/theme';
+@use '~@angular/material' as mat;
+// Must be included only once in the project
+@include mat.core();
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  color: #292a1d;
+}
+
+$primary: theme.$app-primary;
+// a {
