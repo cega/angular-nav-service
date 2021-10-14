@@ -20,5 +20,7 @@ $app-dark-theme: mat.define-dark-theme(
 );
 
 @include mat.button-themes($app-dark-theme);
+@include mat.icon-themes($app-dark-theme);
+@include mat.list-themes($app-dark-theme);
 @include mat.sidenav-themes($app-dark-theme);
 @include mat.toolbar-themes($app-dark-theme);
