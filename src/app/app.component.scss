@@ -12,6 +12,7 @@ $primary: theme.$app-primary;
   // background-color: white !important;
   background-color: mat.get-color-from-palette($primary, 200);
   height: 98vh;
+  border: 2px solid darkblue;
 
   .mat-sidenav-content {
     display: flex;
