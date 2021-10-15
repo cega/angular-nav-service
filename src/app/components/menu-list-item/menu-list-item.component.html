@@ -9,7 +9,7 @@
   class="menu-list-item"
 >
   <mat-icon class="routeIcon">{{ item.iconName }}</mat-icon>
-  {{ item.displayName }}
+  &nbsp; {{ item.displayName }}
   <span fxFlex *ngIf="item.children && item.children.length">
     <span fxFlex></span>
     <mat-icon [@indicatorRotate]="expanded ? 'expanded' : 'collapsed'">
@@ -25,4 +25,3 @@
   >
   </app-menu-list-item>
 </div>
-<t
