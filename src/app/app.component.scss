@@ -1,6 +1,6 @@
 @use 'breakpoints';
 @use 'theme';
-@use "~@angular/material" as mat;
+@use '~@angular/material' as mat;
 
 $primary: theme.$app-primary;
 
@@ -17,8 +17,24 @@ $primary: theme.$app-primary;
   .mat-sidenav-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    border: 2px dashed green;
+    & .content {
+      font-weight: bold;
+      border: 1px solid darkolivegreen;
+    }
+    & .version-info {
+      font-size: 8pt;
+      padding: 8px;
+      align-self: flex-end;
+      border: 1px solid brown;
+    }
+    & .router {
+      border: 1 px solid darkorange;
+    }
   }
 }
+
 .sidenav-toolbar {
   height: 64px;
   background-color: mat.get-color-from-palette($primary);
@@ -29,9 +45,11 @@ $primary: theme.$app-primary;
     height: 56px;
   }
 }
+
 .mat-nav-list {
   padding-top: 0;
 }
+
 @include breakpoints.breakpoint-max(600px) {
   .fixed-topnav {
     position: fixed;
@@ -43,16 +61,12 @@ $primary: theme.$app-primary;
 
   .mat-drawer-container,
   .mat-drawer {
-    padding-top: 0px;
+    padding-top: 56px;
   }
 }
+
 .menu-list-item.mat-list-item {
   .mat-list-item-content {
     flex: 1 1 100%;
   }
-}
-.version-info {
-  font-size: 8pt;
-  padding: 8px;
-  align-self: flex-end;
 }

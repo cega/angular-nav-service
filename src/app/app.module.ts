@@ -12,6 +12,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
@@ -30,6 +31,7 @@ import { HelloComponent } from './hello.component';
     MatSidenavModule,
     MatToolbarModule,
     MatButtonModule,
+    FlexLayoutModule
   ],
   declarations: [
     AppComponent,
